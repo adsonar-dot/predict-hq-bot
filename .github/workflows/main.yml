@@ -17,6 +17,6 @@ jobs:
         run: pip install -r requirements.txt
       - name: Run script
         env:
-          PREDICTHQ_API_KEY: ${{ secrets.PREDICTHQ_API_KEY }}
-          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+          PREDICTHQ_API_KEY: ${{ secrets.XCArcPaXQcOKnE4I2tvhMPZOn1YsAMLSyXkmJyNZ }}
+          EMAIL_PASSWORD: ${{ secrets.1007adam }}
         run: python european_events.py
