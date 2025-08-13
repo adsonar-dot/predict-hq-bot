@@ -1,4 +1,5 @@
-Kopiujname: Daily Events Report
+name: Daily Events Report
+
 on:
   schedule:
     - cron: '0 7 * * *'  # 9:00 w Polsce (UTC+2)
@@ -20,3 +21,4 @@ jobs:
           PREDICTHQ_API_KEY: ${{ secrets.PREDICTHQ_API_KEY }}
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
         run: python european_events.py
+
