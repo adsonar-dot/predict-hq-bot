@@ -1,0 +1,23 @@
+name: Daily Events Report
+
+on:
+  schedule:
+    - cron: '0 7 * * *'  # 9:00 w Polsce (UTC+2)
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.10'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run script
+        env:
+          PREDICTHQ_API_KEY: ${{ secrets.PREDICTHQ_API_KEY }}
+          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+        run: python european_events.py
