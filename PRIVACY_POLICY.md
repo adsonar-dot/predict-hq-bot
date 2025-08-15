@@ -19,4 +19,4 @@ Niniejsza Polityka Prywatności opisuje, jak zbieramy, używamy i chronimy infor
 - Zastrzegamy sobie prawo do aktualizacji tej polityki. O każdej zmianie poinformujemy użytkowników.
 
 ## 5. Kontakt
-- W razie pytań prosimy o kontakt pod adresem: [Twój e-mail lub nazwa aplikacji].
+- W razie pytań prosimy o kontakt pod adresem: [potega.adam@gmail.com].
