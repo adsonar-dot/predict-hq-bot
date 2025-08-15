@@ -19,6 +19,8 @@ EMAIL_PASSWORD = "twoje_hasło_do_aplikacji"  # Użyj "App Password" z Gmail
 
 # Pobierz dane z API
 response = requests.get(API_URL, headers={"Authorization": f"Bearer {API_KEY}"})
+print("Status Code:", response.status_code)
+print("API Response:", response.text)
 events = response.json()
 
 # Filtrowanie eventów z Europy
